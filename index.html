@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <title>Resume</title>
+    <style>
+        * {
+            font-family: 'Lato', sans-serif;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            padding: 0;
+            border: 0;
+            margin: 0;
+        }
+
+        header,
+        main {
+            max-width: 1320px;
+            margin: 0 auto;
+
+        }
+
+        header {
+            padding: 26px;
+            background-color: #005050;
+        }
+
+        header h1 {
+            margin: 0 0 15px;
+            color: #fff;
+            letter-spacing: 1.5px;
+        }
+
+        header h4 {
+            margin: 0;
+            color: #fff;
+            letter-spacing: 1.5px;
+        }
+
+        header ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            text-align: right;
+        }
+
+        header ul li {
+            margin: 0 0 10px;
+            font-weight: 600;
+            font-size: 14px;
+            color: #fff;
+            letter-spacing: 1px;
+        }
+
+        header ul li .icon {
+            margin-left: 10px;
+        }
+
+        .heading {
+            min-width: 40%;
+        }
+
+        .clearfix {
+            overflow: auto;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+
+        /* main {
+            padding: 26px;
+        } */
+
+        .detailed-info {
+            width: 60%;
+            padding: 26px;
+            float: left;
+        }
+
+        .company-list {
+            margin: 18px 0;
+        }
+
+        .company-name {
+            margin: 0;
+        }
+
+        .designation {
+            margin: 5px 0 0;
+        }
+
+        .more-info {
+            font-size: 14px;
+            font-weight: bold;
+            color: #005050;
+        }
+
+        .company {
+            padding-bottom: 25px;
+            border-bottom: 1px solid #005050;
+            margin-bottom: 50px;
+        }
+
+        .project {
+            padding: 0 0 15px;
+            border-bottom: 1px dashed #005050;
+            margin-bottom: 25px;
+        }
+
+        .project.first {
+            padding: 15px 0;
+        }
+
+        .project:last-child {
+            border-bottom: none;
+            margin: 0;
+        }
+
+        .project>h3 {
+            margin: 0 0 15px;
+            font-size: 15px;
+        }
+
+        .project ul {
+            padding-left: 20px;
+        }
+
+        .project ul li {
+            margin-bottom: 15px;
+        }
+
+        .project-list>h2 {
+            padding: 10px;
+            background-color: #005050;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .basic-info {
+            width: 40%;
+            padding: 26px;
+            float: left;
+        }
+
+        .duration {
+            font-weight: 700;
+            font-style: italic;
+            font-size: 14px;
+            color: #005050;
+        }
+
+        .summary {
+            margin-bottom: 50px;
+        }
+
+        .summary h2,
+        section>h2 {
+            margin: 0;
+            border-bottom: 1px solid #005050;
+            padding: 0 0 15px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+        }
+
+        .summary p {
+            line-height: 1.7;
+        }
+
+        .skills {
+            margin-bottom: 50px;
+        }
+
+        .skill-list {
+            margin: 16px 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .skill-list span {
+            padding: 9px;
+            border-radius: 5px;
+            margin: 5px;
+            display: inline-block;
+            background-color: #005050;
+            color: #fff;
+            text-align: center;
+        }
+
+        .education {
+            margin-bottom: 50px;
+        }
+
+        .educ-info {
+            margin: 18px 0;
+        }
+
+        .educ-info h3 {
+            margin: 0;
+            font-weight: normal;
+        }
+
+        .additional-data p span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="clearfix">
+            <div class="left heading">
+                <h1>Abhishek Rajbhar</h1>
+                <h4>Frontend Developer</h4>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>8369449437<i class="fas fa-mobile icon"></i></li>
+                    <li>abhishekrajbhar020@gmail.com <i class="fas fa-envelope icon"></i></li>
+                    <li>github.com/abhishekrajbhar7 <i class="fab fa-github icon"></i></li>
+                    <li>Mumbai, India <i class="fas fa-map-marker-alt icon"></i></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="clearfix main-wrapper">
+            <div class="detailed-info">
+                <section class="experience">
+                    <h2>Experience</h2>
+                    <div class="company-list">
+                        <div class="company">
+                            <div class="clearfix heading">
+                                <div class="left">
+                                    <h3 class="company-name">Site Invention Website Design and development company</h3>
+                                    <p class="designation">Frontend Developer</p>
+                                </div>
+                                <div class="right">
+                                    <p class="duration">02/2022 - Present</p>
+                                </div>
+                            </div>
+                            <div class="company-detail">
+                                <div class="project-list">
+                                    <h2>Projects</h2>
+                                    <div class="project first">
+                                        <h3>Goli Realty Group : Real Estate </h3>
+                                        <ul>
+                                            <li>Goli Realty is a real estate website where anyone can buy the property
+                                                and sell the property easily</li>
+                                            <li>My role in this website is that to Designed and developed whole pages in
+                                                responsive way.</li>
+                                            <li>handling all over website development and changes.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="project">
+                                        <h3>Klub K9 : Woocommerce Website</h3>
+                                        <ul>
+                                            <li>klub k9 is a woocommerce website where anyone can buy the product for
+                                                their pet's.</li>
+                                            <li>My role in this website is that to Designed and developed whole pages in
+                                                responsive way.</li>
+                                            <li>Product uploading and handling all over website development and changes.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="project">
+                                        <h3>Heatray Solar Pvt. Ltd.: Dynamic Website</h3>
+                                        <ul>
+                                            <li>Heatray Solar is a Dynamin website where you can get the information
+                                                about all type of solar product's.</li>
+                                            <li>My role in this website is that to Designed and developed whole pages in
+                                                responsive way.</li>
+                                            <li>handling all over website development and changes.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="project">
+                                        <h3>NMLS (New Mahalakshmi Store): Woocommerce Website</h3>
+                                        <ul>
+                                            <li>NMLS is a woocommerce website where anyone can buy the Saree's</li>
+                                            <li>My role in this website is that to Designed and developed whole pages in
+                                                responsive way.</li>
+                                            <li>Product uploading and handling all over website development and changes.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="company">
+                            <div class="clearfix heading">
+                                <div class="left">
+                                    <h3 class="company-name">React Project</h3>
+                                </div>
+                            </div>
+                            <div class="company-detail">
+                                <div class="project-list">
+                                    <h2>Projects</h2>
+                                    <div class="project">
+                                        <h3>Keeper App <span class="more-info">(<a
+                                                    style="text-decoration: none; color: black;"
+                                                    href="https://splendorous-pavlova-124dec.netlify.app/"
+                                                    target="_blank">https://splendorous-pavlova-124dec.netlify.app/</a>)</span>
+                                        </h3>
+                                        <ul>
+                                            <li>In this app you can write the note's and delete the note .</li>
+                                            <li>I developed the complete app using HTML, CSS, Bootstrap, Javascript,
+                                                React js.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="basic-info">
+                <section class="summary">
+                    <h2>Summary</h2>
+                    <p>I have experience utilising HTML, CSS, and JavaScript to design user-friendly and aesthetically
+                        pleasing websites. I've worked with front-end React JS frameworks before. I have experience with
+                        responsive design and enhancing the functionality of websites across a range of browsers and
+                        devices. I love working with designers and backend developers to create fantastic user
+                        experiences for digital products since I have a keen eye for detail.</p>
+                </section>
+                <section class="skills">
+                    <h2>Skills</h2>
+                    <div class="skill-list">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>Bootstrap</span>
+                        <span>Javascript</span>
+                        <span>React js</span>
+                        <span>Nest JS</span>
+                        <span>Node JS</span>
+                        <span>MongoDB</span>
+                        <span>WordPress</span>
+                    </div>
+                </section>
+                <section class="education">
+                    <h2>Education</h2>
+                    <div class="educ-info">
+                        <h3>South Indian Education Society Science, Commerce and
+                            Arts (BSC-IT)</h3>
+                        <p class="duration">06/2018 - 06/2021</p>
+                    </div>
+                </section>
+                <section class="version-control skills">
+                    <h2>Version Control</h2>
+                    <div class="version-list skill-list">
+                        <span>Github</span>
+                    </div>
+                </section>
+                <section class="additional-info">
+                    <h2>Additional Information</h2>
+                    <div class="additional-data">
+                        <p><span>Languages</span> : Hindi, English, Marathi</p>
+                        <p><span>Inerests</span> : Cricket, Football, Music</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
